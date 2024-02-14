@@ -1,6 +1,6 @@
 #include <assert.h>
 
-#include "CSML_Client.h"
+#include "../include/CSML_Client.h"
 
 void *_get_in_addr(struct sockaddr *sa){
 	if (sa->sa_family == AF_INET) {
