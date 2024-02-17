@@ -4,5 +4,5 @@ xbase_server.c
 xexample_client.c
 serv_compile.zsh
 serv_delete.zsh
-libCSML_Client.so
-libCSML_Server.so
+libCSML_Client.a
+libCSML_Server.a
