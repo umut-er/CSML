@@ -12,7 +12,7 @@ void *_get_in_addr(struct sockaddr *sa){
 
 CSML_Client* make_client(char* host_name, char* serv_name,
 						size_t buffer_capacity){
-    int sockfd, numbytes;  
+    int sockfd;  
 	struct addrinfo hints, *servinfo, *p;
 	int rv;
 	char s[INET6_ADDRSTRLEN];

@@ -15,5 +15,5 @@ If you want to contribute, open an issue or an pull request. I will probably see
 "CODE MESSAGE"  
 CODE (also referred to as the "request code") is an unique integer, denoting the type of the request.  
 MESSAGE is the actual content of the request.
-- `xbase_server.c` and `xexample_client.c` files are not a part of this project. They are just demonstrations of the project.
+- The Makefile will produce .so files for linking purposes.
 - This project is released under an "Unlicense License". That means this project is completely public domain. Do whatever you want with it.

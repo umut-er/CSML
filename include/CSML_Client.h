@@ -18,10 +18,9 @@ typedef struct{
     size_t buffer_size;
 } CSML_Client;
 
-// send flag = 0
 void *_get_in_addr(struct sockaddr *sa);
 CSML_Client* make_client(char* host_name, char* serv_name,
                         size_t buffer_capacity);
-int poll_server(CSML_Client*);
+int poll_server(CSML_Client*); // -2: server quit, -1: no msg, 1 msg received
 void send_to_server(CSML_Client*, void*, size_t);
 void free_client(CSML_Client*);
