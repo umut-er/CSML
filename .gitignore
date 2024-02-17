@@ -2,3 +2,5 @@ client
 server
 xbase_server.c
 xexample_client.c
+serv_compiler.zsh
+serv_delete.zsh
