@@ -9,7 +9,7 @@ $(info SRCS=$(SRCS))
 
 all: LIB
 
-$(OBJS): $(SRC)/*.c
+%.o: $(SRC)/%.c
 	$(CC) $(CFLAGS) $< -c -o $@
 
 LIB: $(OBJS)
