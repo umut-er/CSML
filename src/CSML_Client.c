@@ -52,7 +52,7 @@ CSML_Client* make_client(char* host_name, char* serv_name,
 
 // -1 for no code, -2 for server disconnecting, 1 if the client received something.
 int poll_server(CSML_Client* client){
-    int poll_count = poll(&client->server_fd, 1, -1);
+    int poll_count = poll(&client->server_fd, 1, 0);
     assert(poll_count != -1);
 
     if(!(client->server_fd.revents & POLLIN))
